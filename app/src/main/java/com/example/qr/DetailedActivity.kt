@@ -1,6 +1,8 @@
 package com.example.qr
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -26,6 +28,12 @@ class DetailedActivity : AppCompatActivity() {
             textViewSecond.text = card.secondText
             textViewPrice.text = card.price
 
+        }
+        val SignButton = findViewById<Button>(R.id.backbutton)
+        SignButton.setOnClickListener {
+            val intent = Intent(this, ListPage::class.java)
+            startActivity(intent)
+            finish()
         }
 
 

@@ -21,10 +21,11 @@
                 android:layout_width="345dp"
                 android:layout_height="500dp"
                 android:layout_marginStart="33dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="80dp"
                 android:layout_marginEnd="33dp"
                 android:background="#d9d9d9"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/img_43" />
@@ -98,7 +99,8 @@
 
                 <TableRow
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
 
                     <ImageButton
                         android:id="@+id/imageButton3"
@@ -142,13 +144,23 @@
                 android:layout_width="345dp"
                 android:layout_height="386dp"
                 android:layout_marginStart="44dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="60dp"
                 android:layout_marginEnd="44dp"
                 android:background="@drawable/img_47"
                 android:contentDescription="@string/app_name"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textPrice" />
+
+            <Button
+                android:id="@+id/backbutton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:drawableEnd="@drawable/baseline_reply_all_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
