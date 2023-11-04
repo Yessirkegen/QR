@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <item android:title="Man"
+        >
+        <menu>
+            <item android:title="New"
+                android:id="@+id/newButtonMenu"
+                />
+            <item android:title="Jeans"
+                android:id="@+id/jeansButtonMenu"
+                />
+            <item android:title="Shirt"
+                android:id="@+id/shirtButtonMenu"
+                />
+            <item android:title="Headwear"
+                android:id="@+id/headwearButtonMenu"
+                />
+
+        </menu>
+    </item>
+    <item android:title="Woman">
+        <menu>
+            <item android:title="New"
+                android:id="@+id/womannewButtonMenu"
+                />
+            <item android:title="Jeans"
+                android:id="@+id/womanjeansButtonMenu"
+                />
+            <item android:title="Shirt"
+                android:id="@+id/womanshirtButtonMenu"
+                />
+            <item android:title="Headwear"
+                android:id="@+id/womanheadwearButtonMenu"
+                />
+
+        </menu>
+    </item>
+    <item android:title="Kids">
+        <menu>
+            <item android:title="New"
+                android:id="@+id/kidsnewButtonMenu"
+                />
+            <item android:title="Jeans"
+                android:id="@+id/kidsjeansButtonMenu"
+                />
+            <item android:title="Shirt"
+                android:id="@+id/kidsshirtButtonMenu"
+                />
+            <item android:title="Headwear"
+                android:id="@+id/kidsheadwearButtonMenu"
+                />
+
+
+        </menu>
+
+    </item>
+    <item android:title=""
+
+        >
+        <menu>
+            <item android:title="ACCOUNT"
+                android:id="@+id/butaccountmenu"
+                android:icon="@drawable/img_36"/>
+            <item         android:id="@+id/numbersupport"
+                android:title="(229) 555-0109"
+
+                android:icon="@drawable/img_37"
+                />
+
+            <item android:id="@+id/storelocal"
+                android:title="Astana IT University"
+
+                android:icon="@drawable/img_38"
+                />
+        </menu>
+
+    </item>
+
+</menu>

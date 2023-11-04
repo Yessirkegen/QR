@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardMain"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    app:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <ImageView
+            android:id="@+id/cardImage"
+            android:layout_width="164dp"
+            android:layout_height="200dp"
+            android:background="#d9d9d9"
+            android:src="@drawable/img_39" />
+
+        <TextView
+            android:id="@+id/cardnametext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/semibold"
+            android:text="Shirt Polo"
+            android:textAlignment="viewStart"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/cardsecondtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Short sleeve polo shirt"
+            android:textAlignment="viewStart"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cardpricetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="$179"
+            android:textAlignment="viewStart"
+            android:textColor="#23224F"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

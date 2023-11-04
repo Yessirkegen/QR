@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.QR" parent="android:Theme.Material.Light">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">411dp</item>
+        <item name="android:label">Ваш заголовок</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+
+
+    </style>
+    <style name="TextAccount">
+        <item name="android:textSize">20sp</item>
+        <item name="android:icon">@drawable/img_36</item>
+
+    </style>
+</resources>

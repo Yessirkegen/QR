@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+
+
+    <style name="password">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+
+    <style name="email_adres">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+
+    <style name="forgot_pass">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="Theme.QR.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.QR.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.QR.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

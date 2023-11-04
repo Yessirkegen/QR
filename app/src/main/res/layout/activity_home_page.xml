@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#000000"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".HomePage">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="398dp"
+                android:layout_height="520dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTintMode="add">
+
+                    <ImageButton
+                        android:id="@+id/shortslevepolo1"
+                        android:layout_width="168dp"
+                        android:layout_height="244dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/img_21"
+                        android:contentDescription="@string/app_name" />
+
+                    <ImageButton
+                        android:id="@+id/shortsleve2"
+                        android:layout_width="168dp"
+                        android:layout_height="244dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="35dp"
+                        android:background="@drawable/img_22"
+                        android:contentDescription="@string/app_name" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/shortslevepolo3"
+                        android:layout_width="168dp"
+                        android:layout_height="244dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/img_23"
+                        android:contentDescription="@string/app_name" />
+
+                    <ImageButton
+                        android:id="@+id/shortsleve4"
+                        android:layout_width="168dp"
+                        android:layout_height="244dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="35dp"
+                        android:background="@drawable/img_24"
+                        android:contentDescription="@string/app_name" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="74dp"
+                android:layout_marginEnd="39dp"
+                android:fontFamily="@font/myfont"
+                android:text="New designer supplies for you!"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="139dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="146dp"
+                android:fontFamily="@font/myfont"
+                android:text="Just for You"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/collection" />
+
+            <ImageButton
+                android:id="@+id/exploremore"
+                android:layout_width="199dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="102dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="102dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/img_8"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toTopOf="@+id/collection"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+            <ImageButton
+                android:id="@+id/collection"
+                android:layout_width="411dp"
+                android:layout_height="460dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/img_9"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/exploremore" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton8"
+                        android:layout_width="227dp"
+                        android:layout_height="314dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/img_25"
+                        android:contentDescription="@string/app_name" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton9"
+                        android:layout_width="227dp"
+                        android:layout_height="314dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/img_25"
+                        android:contentDescription="@string/app_name" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton10"
+                        android:layout_width="227dp"
+                        android:layout_height="314dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/img_25"
+                        android:contentDescription="@string/app_name" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="412dp"
+                android:layout_height="600dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="412dp"
+                        android:layout_height="600dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/img_20"
+                        android:backgroundTint="#FFFFFF"
+                        android:backgroundTintMode="multiply"
+                        android:contentDescription="@string/app_name" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="412dp"
+                        android:layout_height="600dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/img_18"
+                        android:backgroundTint="#FFFFFF"
+                        android:backgroundTintMode="multiply"
+                        android:contentDescription="@string/app_name" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton7"
+                        android:layout_width="412dp"
+                        android:layout_height="600dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/img_19"
+                        android:backgroundTint="#FFFFFF"
+                        android:backgroundTintMode="multiply"
+                        android:contentDescription="@string/app_name" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="410dp"
+                android:layout_height="572dp"
+                android:layout_marginTop="94dp"
+                android:background="#E6E6E6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="67dp"
+                    android:layout_marginEnd="121dp"
+                    android:fontFamily="@font/bolditalic"
+                    android:text="QAZAQ REPUBLIC"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="354dp"
+                    android:layout_height="76dp"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginEnd="29dp"
+                    android:gravity="center"
+                    android:text="We are proud to design and deliver quality and comfortable clothing for you."
+                    app:layout_constraintBottom_toTopOf="@+id/imageView4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="250dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginEnd="80dp"
+                    android:gravity="center"
+                    android:text="Fast shipping. Free on orders over $10."
+                    app:layout_constraintBottom_toTopOf="@+id/imageView5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="168dp"
+                    android:layout_marginEnd="170dp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView17"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16"
+                    app:srcCompat="@drawable/img_29" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="168dp"
+                    android:layout_marginEnd="170dp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView19"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17"
+                    app:srcCompat="@drawable/img_30" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="253dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginEnd="77dp"
+                    android:gravity="center"
+                    android:text="Sustainable process from start to finish."
+                    app:layout_constraintBottom_toTopOf="@+id/imageView6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="168dp"
+                    android:layout_marginEnd="170dp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView20"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19"
+                    app:srcCompat="@drawable/img_31"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="72dp"
+                    android:layout_marginEnd="74dp"
+                    android:layout_marginBottom="21dp"
+                    android:gravity="center"
+                    android:text="Unique designs and high-quality materials."
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_menu_homr"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+
+        android:layout_gravity="start"
+        android:background="#F6F5F5"
+        android:clipToPadding="false"
+        android:paddingTop="5dp"
+        app:bottomInsetScrimEnabled="false"
+        app:itemBackground="@drawable/img_35"
+        app:itemHorizontalPadding="25dp"
+        app:itemIconTint="#263281"
+        app:itemTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:itemTextColor="#232121"
+        app:itemVerticalPadding="0dp"
+        app:menu="@menu/nav_menu"
+        app:subheaderInsetEnd="16dp"
+        app:subheaderInsetStart="15dp"
+        app:subheaderTextAppearance="@style/TextAppearance.AppCompat.Large" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

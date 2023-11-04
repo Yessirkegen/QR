@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">QAZAQ REPUBLIC</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="password">
+        Password
+    </string>
+    <!-- strings.xml -->
+    <string name="email_adres">
+        Email Adress
+    </string>
+    <string name="forgot_pass">
+        Forgot password?
+    </string>
+    <string name="or">OR</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="register">REGISTER</string>
+    <string name="sign_in_to_speed_up_the_checkout_xa_process_and_manage_your_orders">Sign in to speed up the checkout\nprocess and manage your orders</string>
+    <string name="have_an_account">Have an account?</string>
+    <string name="register_now">REGISTER NOW</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="account">ACCOUNT</string>
+
+</resources>
