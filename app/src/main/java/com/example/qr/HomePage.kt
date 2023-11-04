@@ -2,6 +2,7 @@ package com.example.qr
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import com.example.qr.databinding.ActivityHomePageBinding
@@ -19,6 +20,13 @@ class HomePage : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        val ProfileButton = findViewById<Button>(R.id.butaccountmenu)
+        ProfileButton.setOnClickListener {
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
     }
 
 }
