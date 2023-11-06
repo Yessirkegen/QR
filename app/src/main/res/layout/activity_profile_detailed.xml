@@ -60,16 +60,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ButtonPasswordChange" />
 
-    <ImageButton
-        android:id="@+id/buttonPushNotify"
-        android:layout_width="345dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="33dp"
-        android:background="@drawable/img_54"
-        android:contentDescription="@string/app_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonEmalnotify" />
 </androidx.constraintlayout.widget.ConstraintLayout>

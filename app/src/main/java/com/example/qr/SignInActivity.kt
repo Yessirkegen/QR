@@ -21,7 +21,7 @@ class SignInActivity : ComponentActivity() {
 
         val SignButton = findViewById<Button>(R.id.SignButton)
         SignButton.setOnClickListener {
-            val intent = Intent(this, HomePage::class.java)
+            val intent = Intent(this,HomePage::class.java)
             startActivity(intent)
             finish()
         }

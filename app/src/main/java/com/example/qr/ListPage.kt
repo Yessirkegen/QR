@@ -1,5 +1,6 @@
 package com.example.qr
 
+import Card
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
@@ -14,7 +15,6 @@ class ListPage : AppCompatActivity() {
     private var cardList= mutableListOf<Card>()
     private var recyclerView:RecyclerView? =null
     private var recyclerViewCardAdapter:RecyclerViewCard?=null
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,17 +36,18 @@ class ListPage : AppCompatActivity() {
 
         prepareCardListData()
 
+
         }
     private fun prepareCardListData() {
         var card =  Card("GGG", R.drawable.img_39,"Short sleeve polo shirt","$179" )
         cardList.add(card)
-        card =  Card("Canelo", R.drawable.img_40,"Short sleeve polo shirt","$179" )
+        card =  Card("Canelo", R.drawable.img_40,"Short sleeve polo shirt","$179")
         cardList.add(card)
-         card =  Card("Shirt Polo", R.drawable.img_41,"Short sleeve polo shirt","$179" )
+         card =  Card("Shirt Polo", R.drawable.img_41,"Short sleeve polo shirt","$179")
         cardList.add(card)
-         card =  Card("Shirt Polo", R.drawable.img_42,"Short sleeve polo shirt","$179" )
+         card =  Card("Shirt Polo", R.drawable.img_42,"Short sleeve polo shirt","$179")
         cardList.add(card)
-         card =  Card("Shirt Polo", R.drawable.img_43,"Short sleeve polo shirt","$179" )
+         card =  Card("Shirt Polo", R.drawable.img_43,"Short sleeve polo shirt","$179")
         cardList.add(card)
          card =  Card("Shirt Polo", R.drawable.img_44,"Short sleeve polo shirt","$179" )
         cardList.add(card)

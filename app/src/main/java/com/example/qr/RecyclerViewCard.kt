@@ -1,5 +1,6 @@
 package com.example.qr
 
+import Card
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -51,4 +52,6 @@ class RecyclerViewCard constructor(private val getActivity: ListPage, private va
         val cardView : CardView = itemView.findViewById(R.id.cardMain)
 
     }
+
+
 }

@@ -11,7 +11,7 @@ class ProfileActivity : AppCompatActivity() {
         setContentView(R.layout.activity_profile)
         val ProfileButton = findViewById<Button>(R.id.buttonProfile)
         ProfileButton.setOnClickListener {
-            val intent = Intent(this, ProfileActivity::class.java)
+            val intent = Intent(this, ProfileDetailedActivity::class.java)
             startActivity(intent)
             finish()
         }

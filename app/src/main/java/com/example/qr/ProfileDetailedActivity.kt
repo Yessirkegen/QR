@@ -17,22 +17,17 @@ class ProfileDetailedActivity : AppCompatActivity() {
         }
         val ButtonEditPssword = findViewById<ImageButton>(R.id.ButtonPasswordChange)
         ButtonEditPssword.setOnClickListener {
-            val intent = Intent(this, ProfileActivity::class.java)
+            val intent = Intent(this, PasswordDetailedActivity::class.java)
             startActivity(intent)
             finish()
         }
         val ButtonEmailNotify = findViewById<ImageButton>(R.id.buttonEmalnotify)
         ButtonEmailNotify.setOnClickListener {
-            val intent = Intent(this, ProfileActivity::class.java)
+            val intent = Intent(this, EmailNotifyActivity::class.java)
             startActivity(intent)
             finish()
         }
-        val ButtonPushNotify = findViewById<ImageButton>(R.id.buttonPushNotify)
-        ButtonPushNotify.setOnClickListener {
-            val intent = Intent(this, ProfileActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
+
 
 
     }

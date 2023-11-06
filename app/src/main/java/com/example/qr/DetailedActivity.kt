@@ -1,5 +1,6 @@
 package com.example.qr
 
+import Card
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button

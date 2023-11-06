@@ -13,11 +13,25 @@
         android:theme="@style/Theme.QR"
         tools:targetApi="31">
         <activity
+            android:name=".FavoritesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Design.Light"/>
+        <activity
+            android:name=".EmailNotifyActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".PasswordDetailedActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
             android:name=".ProfileMainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Design.Light" />
         <activity
             android:name=".ProfileDetailedActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Design.Light" />
         <activity
             android:name=".ProfileActivity"
             android:exported="false"
