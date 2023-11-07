@@ -6,6 +6,8 @@ data class Card(
     val image: Int,
     val secondText: String,
     val price: String,
+    var isFavorite: Boolean = false, // Добавляем поле для избранного
+    var isInCart: Boolean = false
 
 ) : Parcelable {
     constructor(parcel: Parcel) : this(

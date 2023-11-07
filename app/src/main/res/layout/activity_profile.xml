@@ -53,7 +53,7 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonProfile" />
 
     <Button
-        android:id="@+id/buttonOrders2"
+        android:id="@+id/buttongotofav"
         android:layout_width="124dp"
         android:layout_height="48dp"
         android:layout_marginStart="35dp"

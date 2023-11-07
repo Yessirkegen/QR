@@ -17,7 +17,13 @@ class ProfileActivity : AppCompatActivity() {
         }
         val OrdersButton = findViewById<Button>(R.id.buttonOrders)
         OrdersButton.setOnClickListener {
-            val intent = Intent(this, ProfileActivity::class.java)
+            val intent = Intent(this, BuyActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        val FavButton = findViewById<Button>(R.id.buttongotofav)
+        FavButton.setOnClickListener {
+            val intent = Intent(this, FavActivity::class.java)
             startActivity(intent)
             finish()
         }

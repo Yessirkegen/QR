@@ -11,6 +11,7 @@ import com.example.qr.databinding.ActivityDetailedBinding
 
 class DetailedActivity : AppCompatActivity() {
     lateinit var binding: ActivityDetailedBinding
+    private var card: Card? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +19,7 @@ class DetailedActivity : AppCompatActivity() {
         binding = ActivityDetailedBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val card = this.intent.getParcelableExtra<Card>("card")
+
         if(card!=null){
             val textView :TextView = findViewById(R.id.textCatalog)
             val imageView: ImageView = findViewById(R.id.ImageCatalog)
@@ -28,6 +30,19 @@ class DetailedActivity : AppCompatActivity() {
             imageView.setImageResource(card.image)
             textViewSecond.text = card.secondText
             textViewPrice.text = card.price
+
+            val addToFavoritesButton = findViewById<Button>(R.id.addToFavoritesButton)
+            addToFavoritesButton.setOnClickListener {
+                card?.isFavorite = true // Помечаем карточку как избранную
+                // Здесь можно добавить логику для обновления интерфейса, например, изменение цвета кнопки
+            }
+
+            // Добавим обработку события "Добавить в корзину"
+            val addToCartButton = findViewById<Button>(R.id.addToCartButton)
+            addToCartButton.setOnClickListener {
+                card?.isInCart = true // Помечаем карточку как добавленную в корзину
+                // Здесь можно добавить логику для обновления интерфейса, например, изменение цвета кнопки
+            }
 
         }
         val SignButton = findViewById<Button>(R.id.backbutton)
