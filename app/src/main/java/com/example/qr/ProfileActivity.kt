@@ -3,6 +3,7 @@ package com.example.qr
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 
 class ProfileActivity : AppCompatActivity() {
@@ -24,6 +25,12 @@ class ProfileActivity : AppCompatActivity() {
         val FavButton = findViewById<Button>(R.id.buttongotofav)
         FavButton.setOnClickListener {
             val intent = Intent(this, FavActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        val SignButton = findViewById<Button>(R.id.backbutton3)
+        SignButton.setOnClickListener {
+            val intent = Intent(this, HomePage::class.java)
             startActivity(intent)
             finish()
         }

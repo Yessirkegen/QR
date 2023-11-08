@@ -173,7 +173,8 @@
                 android:contentDescription="@string/app_name"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck"
+                android:onClick="onAddToFavoriteClick"/>
 
             <Button
                 android:id="@+id/addToCartButton"
@@ -184,7 +185,8 @@
                 android:background="@drawable/img_60"
                 android:contentDescription="@string/app_name"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ImageCatalog" />
+                app:layout_constraintTop_toBottomOf="@+id/ImageCatalog"
+                android:onClick="onAddToCartClick"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

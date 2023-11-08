@@ -31,7 +31,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profileText2"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/img_72" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress3"
@@ -101,5 +101,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
         android:text="Data Saved"/>
+
+    <Button
+        android:id="@+id/backbutton5"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/app_name"
+        android:drawableEnd="@drawable/baseline_reply_all_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -70,12 +70,12 @@
 
     <Button
         android:id="@+id/SignButton"
-        android:layout_width="341dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="82dp"
         android:layout_marginEnd="35dp"
-        android:backgroundTint="#F93C00"
+        android:backgroundTint="#23224F"
         android:radius="100dp"
         android:text="SIGN IN"
         android:textColor="#FFFFFF"
@@ -92,7 +92,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="183dp"
         android:layout_marginBottom="62dp"
-        android:background="@drawable/img"
+        android:background="@drawable/img_71"
         android:contentDescription="@string/sign_in"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -116,7 +116,7 @@
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="341dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="89dp"
@@ -124,6 +124,7 @@
         android:backgroundTint="#A3A3A3"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:text="Email Adress"
         android:textColor="#A3A3A3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -132,13 +133,14 @@
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="341dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="2dp"
         android:layout_marginEnd="35dp"
         android:backgroundTint="#A3A3A3"
         android:ems="10"
+        android:text="Password"
         android:textColor="#A3A3A3"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
@@ -168,18 +170,14 @@
         android:id="@+id/ButtonRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="168dp"
-        android:layout_marginTop="87dp"
+        android:layout_marginTop="107dp"
         android:layout_marginEnd="35dp"
-        android:layout_marginBottom="193dp"
         android:background="@drawable/line_42"
         android:text="@string/register"
         android:textColor="?android:attr/colorPrimaryDark"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="parent" />
 
 

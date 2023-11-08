@@ -4,6 +4,7 @@ import Card
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.GridLayoutManager
@@ -36,7 +37,12 @@ class ListPage : AppCompatActivity() {
 
         prepareCardListData()
 
-
+        val SignButton = findViewById<Button>(R.id.backbutton2)
+        SignButton.setOnClickListener {
+            val intent = Intent(this, HomePage::class.java)
+            startActivity(intent)
+            finish()
+        }
         }
     private fun prepareCardListData() {
         var card =  Card("GGG", R.drawable.img_39,"Short sleeve polo shirt","$179" )
@@ -50,6 +56,26 @@ class ListPage : AppCompatActivity() {
          card =  Card("Shirt Polo", R.drawable.img_43,"Short sleeve polo shirt","$179")
         cardList.add(card)
          card =  Card("Shirt Polo", R.drawable.img_44,"Short sleeve polo shirt","$179" )
+        cardList.add(card)
+        card =  Card("Canelo", R.drawable.img_40,"Short sleeve polo shirt","$179")
+        cardList.add(card)
+        card =  Card("Shirt Polo", R.drawable.img_41,"Short sleeve polo shirt","$179")
+        cardList.add(card)
+        card =  Card("Shirt Polo", R.drawable.img_42,"Short sleeve polo shirt","$179")
+        cardList.add(card)
+        card =  Card("Shirt Polo", R.drawable.img_43,"Short sleeve polo shirt","$179")
+        cardList.add(card)
+        card =  Card("Shirt Polo", R.drawable.img_44,"Short sleeve polo shirt","$179" )
+        cardList.add(card)
+        card =  Card("Canelo", R.drawable.img_40,"Short sleeve polo shirt","$179")
+        cardList.add(card)
+        card =  Card("Shirt Polo", R.drawable.img_41,"Short sleeve polo shirt","$179")
+        cardList.add(card)
+        card =  Card("Shirt Polo", R.drawable.img_42,"Short sleeve polo shirt","$179")
+        cardList.add(card)
+        card =  Card("Shirt Polo", R.drawable.img_43,"Short sleeve polo shirt","$179")
+        cardList.add(card)
+        card =  Card("Shirt Polo", R.drawable.img_44,"Short sleeve polo shirt","$179" )
         cardList.add(card)
 
         recyclerViewCardAdapter!!.notifyDataSetChanged()
